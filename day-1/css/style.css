@@ -10,15 +10,27 @@ body {
     font-family: "Montserrat", serif;
 }
 
+img{
+    width: 100%;
+    display: block;
+}
+
+
+/* LAYOUT */
 .container{
     display: flex;
 }
 
-.sidebar{
+.sidebar {
     background-color: #000000;
-    height: calc(100vh - 90px);
-    width: 15vw;
+    width: 20vw;
+    min-height: calc(100vh - 90px);
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    padding-top: 15px;
 }
+
 
 .main-content{
     display: flex;
@@ -30,17 +42,118 @@ body {
 .header{
     background-color: #10151b;
     height: 90px;
-    width: 85vw;
+    width: 80vw;
 }
 
 .body{
     background-color: #151922;
     height: calc(100vh - 180px);
-    width: 85vw;
+    width: 80vw;
 }
 
 footer{
     height: 90px;
     width: 100vw;
     background-color: #282828;
+}
+
+/* LOGO */
+.logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    width: 100%;
+}
+
+.logo .small-logo img {
+    width: 30px;
+    height: auto;
+    padding: 10px 0 20px;
+}
+
+.logo .big-logo img {
+    display: none;
+    padding-bottom: 20px;
+}
+
+/* ICONE */
+.icon {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.list-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 15px;
+}
+
+.icon .list-icon li {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.icon .list-icon img {
+    width: 30px;
+    height: auto;
+    margin-bottom: 25px;
+}
+
+.icon .list-icon span {
+    display: none;
+    margin-bottom: 25px;
+}
+
+
+/* ---- MODALITÀ DESKTOP ---- */
+@media screen and (min-width: 1024px) {
+    /* LOGO */
+    .logo .small-logo img {
+        display: none;
+    }
+    .logo .big-logo img {
+        display: block;
+        width: 135px;
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    .logo {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start; /* Allinea il logo grande a sinistra */
+        width: 100%;
+    }
+
+    /* Sidebar */
+    .sidebar {
+        align-items: flex-start;
+        padding-left: 20px;
+    }
+
+    /* ICONE */
+    
+    .icon {
+        justify-content: flex-start;
+        width: 100%;
+    }
+
+    .list-icon {
+        align-items: flex-start; /* Allinea icone e testo a sinistra */
+    }
+
+    .icon .list-icon span {
+        display: inline-block;
+        color: #5c5c5c;
+    }
+
+    .icon .list-icon li {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
 }
