@@ -1,3 +1,29 @@
-h1{
-    color: violet;
+/* STILE IN COMUNE */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Montserrat", serif;
+}
+
+.sidebar{
+    background-color: #000000;
+}
+
+.header{
+    background-color: #10151b;
+}
+
+.body{
+    background-color: #151922;
+}
+
+footer{
+    height: 90px;
+    width: 100vw;
+    background-color: #282828;
 }
