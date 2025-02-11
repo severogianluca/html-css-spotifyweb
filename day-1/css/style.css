@@ -17,7 +17,7 @@ body {
 .sidebar{
     background-color: #000000;
     height: calc(100vh - 90px);
-    width: 20vw;
+    width: 15vw;
 }
 
 .main-content{
@@ -30,13 +30,13 @@ body {
 .header{
     background-color: #10151b;
     height: 90px;
-    width: 80vw;
+    width: 85vw;
 }
 
 .body{
     background-color: #151922;
     height: calc(100vh - 180px);
-    width: 80vw;
+    width: 85vw;
 }
 
 footer{
