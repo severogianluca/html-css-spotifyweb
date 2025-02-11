@@ -35,8 +35,6 @@ img{
 .main-content{
     display: flex;
     flex-direction: column;
-    
-   
 }
 
 .header{
@@ -74,16 +72,19 @@ footer{
 .logo .big-logo img {
     display: none;
     padding-bottom: 20px;
+
 }
 
-/* ICONE */
-.icon {
+/* LISTA ICONE */
+.list {
     display: flex;
     width: 100%;
     justify-content: center;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-.list-icon {
+.list .list-icon {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -91,19 +92,21 @@ footer{
     margin-top: 15px;
 }
 
-.icon .list-icon li {
+.list .list-icon li {
     display: flex;
     align-items: center;
     gap: 15px;
+    justify-content: center;  
+    flex-wrap: wrap;
 }
 
-.icon .list-icon img {
-    width: 30px;
+.list .list-icon img {
+    width: 25px;
     height: auto;
     margin-bottom: 25px;
 }
 
-.icon .list-icon span {
+.list .list-icon span {
     display: none;
     margin-bottom: 25px;
 }
@@ -135,23 +138,22 @@ footer{
         padding-left: 20px;
     }
 
-    /* ICONE */
-    
-    .icon {
+    /* LISTA ICONE */
+    .list {
         justify-content: flex-start;
         width: 100%;
     }
 
-    .list-icon {
+    .list .list-icon {
         align-items: flex-start; /* Allinea icone e testo a sinistra */
     }
 
-    .icon .list-icon span {
+    .list .list-icon span {
         display: inline-block;
         color: #5c5c5c;
     }
 
-    .icon .list-icon li {
+    .list .list-icon li {
         display: flex;
         align-items: center;
         gap: 15px;
