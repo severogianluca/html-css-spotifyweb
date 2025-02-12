@@ -23,6 +23,15 @@ hr{
     display: none;
 }
 
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+
 
 /* LAYOUT */
 .container {
@@ -174,6 +183,28 @@ footer{
 
 /* BODY CONTENT */
 
+.list-category{
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px; 
+    padding: 0 30px;
+    margin-bottom: 40px;
+    margin-top: 25px;
+}
+.list-category li{
+    border: 2px solid transparent;
+}
+.list-category a{
+    color: #ffffff;
+    opacity: 0.5;
+}
+
+.list-category li a:hover{
+    border-bottom: 2px solid #adff2f;
+    margin-bottom: 50px;
+}
 
 
 /* MODALITA TABLET */
@@ -250,6 +281,7 @@ footer{
     color: white;
     background-color: transparent;
     border: 2px solid white;
+
     
 }
 }
