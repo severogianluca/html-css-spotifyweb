@@ -8,6 +8,7 @@
 
 body {
     font-family: "Montserrat", serif;
+    
 }
 
 img{
@@ -15,20 +16,26 @@ img{
     display: block;
 }
 
+hr{
+    display: none;
+}
+
 
 /* LAYOUT */
-.container{
+.container {
     display: flex;
+    min-height: 100vh; /*  min-height invece di height per permettere la crescita */
 }
 
 .sidebar {
     background-color: #000000;
     width: 20vw;
-    min-height: calc(100vh - 90px);
+    min-height: 100vh; /* l'altezza al 100% del contenitore */
     display: flex;
     flex-direction: column;
     align-items: center; 
     padding-top: 15px;
+    
 }
 
 
@@ -43,14 +50,16 @@ img{
     width: 80vw;
 }
 
-.body{
+.body {
     background-color: #151922;
-    height: calc(100vh - 180px);
-    width: 80vw;
+    flex-grow: 1;  
+    width: 100%;
+    min-height: 100%;
+   
 }
 
 footer{
-    height: 90px;
+    height: 10vh;
     width: 100vw;
     background-color: #282828;
 }
@@ -82,7 +91,9 @@ footer{
     justify-content: center;
     flex-direction: column;
     justify-content: space-between;
+    flex-grow: 1; 
 }
+
 
 .list .list-icon {
     display: flex;
@@ -97,7 +108,7 @@ footer{
     align-items: center;
     gap: 15px;
     justify-content: center;  
-    flex-wrap: wrap;
+    
 }
 
 .list .list-icon img {
@@ -108,7 +119,11 @@ footer{
 
 .list .list-icon span {
     display: none;
-    margin-bottom: 25px;
+    margin-bottom: 15px;  
+}
+
+.list .list-icon i{
+    display: none;
 }
 
 
@@ -128,7 +143,7 @@ footer{
     .logo {
         display: flex;
         flex-direction: column;
-        align-items: flex-start; /* Allinea il logo grande a sinistra */
+        align-items: flex-start; 
         width: 100%;
     }
 
@@ -139,23 +154,40 @@ footer{
     }
 
     /* LISTA ICONE */
-    .list {
+    /* .list {
         justify-content: flex-start;
         width: 100%;
-    }
+    } */
 
     .list .list-icon {
-        align-items: flex-start; /* Allinea icone e testo a sinistra */
+        align-items: flex-start; 
     }
 
     .list .list-icon span {
         display: inline-block;
         color: #5c5c5c;
+        
     }
 
-    .list .list-icon li {
-        display: flex;
-        align-items: center;
-        gap: 15px;
+    .list .list-icon i{
+        display: block;
+        font-size: 4em;
+        color: #5c5c5c;
+        padding-right: 50px;
+        border-radius: 0%;
     }
+    
+    .list .list-icon i {
+        width: 25px;
+        height: auto;
+        margin-bottom: 25px;
+    }
+    
+
+    .list-icon hr{
+        display: block;
+        width: 90%;
+        margin-bottom: 10px;
+    }
+
 }
