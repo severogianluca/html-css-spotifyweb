@@ -27,18 +27,19 @@ hr{
 /* LAYOUT */
 .container {
     display: flex;
-    height: 100vh; /*  min-height invece di height per permettere la crescita */
+    height: 90vh; /*  min-height invece di height per permettere la crescita */
 }
 
 .sidebar {
     background-color: #000000;
-    width: 20vw;
-    height: 100vh;
+    width: 60px; 
+    height: 90vh;
     display: flex;
     flex-direction: column;
     align-items: center; 
     padding-top: 15px;
     margin-top: auto;
+    flex-shrink: 0;
 
     overflow-y: auto; /* Abilita lo scroll solo in verticale */
     overflow-x: hidden; /* Evita lo scroll orizzontale */
@@ -50,17 +51,18 @@ hr{
 .main-content{
     display: flex;
     flex-direction: column;
-    width: 100%;
+    flex-grow: 1;
+    
 }
 
-.div1{
-    width: 100%;
+.header-content{
+  
     height: 90px;
     background-color:#10151b;
 }
 
-.div2{
-    width: 100%;
+.music-content{
+   
     height: 100%;
     background-color: #151922;
     overflow-y: auto; /* Abilita lo scroll solo in verticale */
@@ -71,7 +73,6 @@ hr{
 
 footer{
     height: 10vh;
-    width: 100vw;
     background-color: #282828;
 }
 
@@ -124,7 +125,7 @@ footer{
 .list .list-icon img {
     width: 25px;
     height: auto;
-    margin-bottom: 25px;
+    margin-bottom: 12px;
     mask-image: #5c5c5c;
 }
 
@@ -153,10 +154,30 @@ footer{
     mask-image: url(/img/home.svg);
 } */
 
+/* HEADER CONTENT */
+.upgrade{
+    text-align: right;
+    margin-top: 20px;
+    margin-right: 10px;
+    
+}
+.btn-upgrade {
+    border: none;
+    padding: 8px 12px;
+    
+    border-radius: 50px; 
+    color: white;
+    background-color: transparent;
+    border: 2px solid white;
+    
+}
 
-/* ---- MODALITÀ DESKTOP ---- */
-@media screen and (min-width: 1024px) {
-    /* LOGO */
+/* BODY CONTENT */
+
+
+
+/* MODALITA TABLET */
+@media screen and (min-width: 768px) {
     .logo .small-logo img {
         display: none;
     }
@@ -178,6 +199,9 @@ footer{
     .sidebar {
         align-items: flex-start;
         padding-left: 20px;
+        width: 200px;
+        flex-shrink: 0;
+
     }
 
     /* LISTA ICONE */
@@ -198,7 +222,7 @@ footer{
 
     .list .list-icon i{
         display: block;
-        font-size: 4em;
+        font-size: 3.5em;
         color: #5c5c5c;
         padding-right: 50px;
         border-radius: 0%;
@@ -217,5 +241,23 @@ footer{
         margin-bottom: 10px;
     }
 
-
+    /* header */
+    .btn-upgrade {
+    border: none;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    border-radius: 50px; 
+    color: white;
+    background-color: transparent;
+    border: 2px solid white;
+    
 }
+}
+/* ---- MODALITÀ DESKTOP ---- */
+@media screen and (min-width: 1024px) {
+
+    
+}
+
+
+
