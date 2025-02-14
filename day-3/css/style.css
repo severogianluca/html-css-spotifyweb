@@ -98,6 +98,25 @@ p {
 
 
 
+/* HOVER SIDEBAR */
+.sidebar .list .list-icon li {
+    cursor: pointer;
+}
+
+.sidebar .list .list-icon li:hover span {
+    color: white; 
+}
+
+
+
+.sidebar .list .list-icon li:hover i {
+    color: white;
+}
+
+
+
+
+
 footer{
     height: 90px;
     background-color: #282828;
@@ -354,8 +373,6 @@ footer{
         transform: scale(1.2); 
     
     }
-
-
 
 
 
