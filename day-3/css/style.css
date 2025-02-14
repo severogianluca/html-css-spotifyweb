@@ -331,8 +331,32 @@ footer{
  .container-music{
     padding: 40px;
     width: 100%;
-
 }
+
+/* HOVER DELLE COPERTINE */
+.music-content .container-music .list-music .music-item{
+    position: relative;
+}
+
+.music-content .container-music .list-music .album-hover{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* display: flex; */
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.music-content .container-music .list-music .music-item:hover .album-hover{
+    display: flex;
+    color: #ffffff;
+    font-size: 50px;
+}
+
+
 
 
 .list-music ul {
