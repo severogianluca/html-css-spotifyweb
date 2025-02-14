@@ -349,9 +349,9 @@ footer{
 
 /* HEADER CONTENT */
 .upgrade{
-    text-align: right;
-    margin-top: 20px;
-    margin-right: 10px;
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px 20px;
     
 }
 .btn-upgrade {
