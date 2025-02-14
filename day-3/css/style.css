@@ -124,12 +124,21 @@ footer{
     object-fit: cover;
 }
 
+.icon-left{
+    color: #c1c1c1;
+    cursor: pointer;
+}
+
+.icon-left div i:hover{
+    color: white;
+}
+
 
 /* bottoni nella parte destra del footer */
 /* Contenitore della barra del volume */
 .volume-bar {
-    width: 100px; /* Larghezza totale della barra */
-    height: 5px; /* Altezza della barra */
+    width: 100px; 
+    height: 5px; 
     background-color: #555; 
     border-radius: 5px;
 }
@@ -140,14 +149,24 @@ footer{
     height: 100%;
     background-color: #c1c1c1; /* Colore della barra del volume */
     border-radius: 5px;
+    cursor: pointer;
 }
+
+.volume-level:hover{
+    background-color: #adff2f;
+}
+
 
 .icon-right{
     display: flex;
     gap: 10px;
+    color: #c1c1c1;
+    cursor: pointer;
+} 
+
+.right-menu .icon-right i:hover{
+    color: white
 }
-
-
 
 
 /* bottoni play centrale */
@@ -164,6 +183,24 @@ footer{
     font-size: 25px;
 }
 
+.btn-start div i {
+    font-size: 24px; 
+    cursor: pointer; 
+}
+
+.btn-start div i:hover {
+    transform: scale(1.2); /* Ingrandisce l'icona */
+    
+}
+
+.upgrade div button{
+    cursor: pointer;
+}
+
+.upgrade div button:hover{
+    transform: scale(1.2); 
+
+}
 /* volume barra centrale */
 .volume-bar-center {
 
@@ -178,6 +215,7 @@ footer{
     width: 40%; 
     height: 100%;
     background-color: #c1c1c1; 
+    cursor: pointer;
 }
 
 .tempo-volume{
@@ -187,6 +225,11 @@ footer{
     margin-top: 10px;
     gap: 10px;
 }
+
+.volume-level-center:hover{
+    background-color: #adff2f;
+}
+
 
 
 
@@ -240,12 +283,10 @@ footer{
     align-items: center;
     gap: 15px;
     justify-content: center;  
+    cursor: pointer;
 }
 
-/* .list-icon li:hover{
-    opacity: 1;
-    cursor: pointer;
-} */
+
 
 .list .list-icon img {
     width: 25px;
@@ -272,6 +313,16 @@ footer{
     border: 1px solid white;
 }
 
+/* HOVER SIDEBAR */
+
+.list-icon li:hover {
+    color: white;
+}
+
+
+
+
+
 
 
 
@@ -293,6 +344,15 @@ footer{
     color: white;
     background-color: transparent;
     border: 2px solid white;    
+    }
+
+    .upgrade div button{
+        cursor: pointer;
+    }
+    
+    .upgrade div button:hover{
+        transform: scale(1.2); 
+    
     }
 
 
@@ -322,9 +382,15 @@ footer{
     opacity: 0.5;
 }
 
-.list-category li a:hover{
+.list-category li a:hover {
     border-bottom: 2px solid #adff2f;
     margin-bottom: 50px;
+    
+}
+
+.list-category li:hover a {
+    color: white; 
+    opacity: 1; 
 }
 
 /* MAIN CONTENT STILE */
@@ -336,6 +402,7 @@ footer{
 /* HOVER DELLE COPERTINE */
 .music-content .container-music .list-music .music-item{
     position: relative;
+    cursor: pointer;
 }
 
 .music-content .container-music .list-music .album-hover{
@@ -344,7 +411,6 @@ footer{
     left: 0;
     width: 100%;
     height: 100%;
-    /* display: flex; */
     display: none;
     align-items: center;
     justify-content: center;
